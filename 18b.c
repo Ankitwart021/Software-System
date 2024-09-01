@@ -8,7 +8,7 @@
 #include <unistd.h>
 int main()
 {
-    int fd = open("/home/darshit/Desktop/Software_Sysytem/Hands-on-1/18_sample.txt", O_RDONLY);
+    int fd = open("/home/ankit/Desktop/Software_Sysytem/Hands-on-1/18_sample.txt", O_RDONLY);
     struct flock rdlock = {F_RDLCK, SEEK_SET, 0, 34, getpid()};
     int id;
     printf("Enter record id:");
